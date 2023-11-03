@@ -3,61 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--link de google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <!--link a estilo propio-->
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Coffe Club ☕</title>
 </head>
 <body>
     <header>
-        <h1>
-            Coffe Club 
-        </h1>
-        <div class="logo">
-            <img src="./imagenes/logo para pagina wed.png" alt="logo">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="./pages/menu.html">Menu</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-1 px-4 logo" href="./index.html"><img src="./imagenes/logo para pagina wed.png" alt="logo-de-wed"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto m px-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/locales.html">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
-
+        <div id="carouselExampleIndicators" class="carousel slide w-50 mt-4 m-auto">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/gallery4.jpg" class="d-block w-100" alt=".gallery4">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/gallery2.jpg" class="d-block w-100" alt="gallery2">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/gallery5.jpg" class="d-block w-100" alt="gallery5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
     </header>
-    <hr>
+    
     <main>
-        <section class="section1">
-            <img src="./imagenes/café1.webp" alt="cafe1">
-        </section>
-        <div class="parrafo1">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nemo eum cupiditate ipsum explicabo maiores quisquam, distinctio, ipsa, harum quis sunt! Autem odio similique modi omnis sunt cumque expedita illo veritatis vitae perferendis quaerat est magni non id pariatur totam praesentium provident, ullam saepe. Tempora, quidem nesciunt delectus perspiciatis, quia soluta rem animi dolor provident enim rerum consequuntur vitae veniam tenetur asperiores saepe cum sed labore. Odit laboriosam, sunt quos ex corrupti placeat incidunt vitae harum itaque repellendus, voluptatum ea eveniet voluptatibus accusamus impedit ducimus obcaecati commodi fugiat doloribus possimus quisquam? Optio reiciendis architecto numquam blanditiis voluptatum. Tempore, fugit adipisci.
-            </p>
-        </div>
-        <section class="section2">
-            <img src="./imagenes/coffe 2.webp" alt="">
+        <div class="card mb-3 mt-5">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./imagenes/expreso-category.jpg" class="img-fluid rounded-start" alt="expresso">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Conoce Nuestra historia</h3>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga et ducimus nemo magni consequatur voluptate nulla architecto impedit. In rem tempore nobis id perferendis natus dignissimos et ad vitae. Dolorum officia temporibus aperiam recusandae perferendis id. Maiores consequatur ratione fugiat nisi. Est officiis ipsum consequatur. Eum nobis laboriosam consequuntur? Labore porro esse temporibus, quas dolorum similique provident optio modi deserunt atque eveniet officiis, facere beatae earum, nihil iste? Quaerat nostrum unde laboriosam atque omnis tempore!</p>
+            
+                </div>
+              </div>
+            </div>
+          </div>
 
-        </section>
-        <div class="parrafo2">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo facere facilis voluptas itaque, velit debitis expedita quo repellendus natus unde id fuga ea sit iure exercitationem tempora totam vero perferendis quam cumque delectus dignissimos dolorem quos animi? Accusamus sed a culpa illum unde assumenda aut labore itaque maiores similique vitae excepturi obcaecati quo quis qui nam praesentium velit, deserunt modi amet voluptatibus laborum minus accusantium eum! Quos optio, labore atque, ratione ipsa consequatur alias doloremque dicta natus reiciendis possimus. Distinctio tenetur quis recusandae itaque soluta? Suscipit illum pariatur, consequuntur non error perferendis doloremque vel cum ipsum ut laborum accusantium repudiandae.</p>
-        </div>
+        
+    
 
     </main>
-    <hr>
+    
     <footer>
-        <h2>
-            Nuestras Redes
-        </h2>
-        <section class="redes">
-            <img src="./imagenes/ig.avif" alt="ig">
-            <img src="./imagenes/twitter.jpg" alt="twitter">
-            <img src="./imagenes/facebook.avif" alt="facebook">
-        </section>
+        <div class="redes-container">
+            <li><a href="https://www.facebook.com/?locale=es_LA" class="facebook" target="_blank"><img src="./imagenes/facebook-icone-noir.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="./imagenes/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/home?lang=es" class="twitter" target="_blank"><img src="./imagenes/twitter.png" alt=""></a></li>
+
+        </div>
+        
 
     </footer>
+    <!--link que se coloca antes del cierre del body-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

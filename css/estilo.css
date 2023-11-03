@@ -5,14 +5,16 @@
 }
 body{
     font-family: 'Handlee', cursive;
-}
-header{
-    background-color: rgb(196, 163, 119);
+    background-color: #c7a17a;
+    
 }
 h1{
     text-align: center;
-    font-size: 50px;
-    padding: 15px
+    font-size: 55px;
+    margin: 12px;
+    padding: 15px;
+    font-family: 'Stint Ultra Expanded', serif;
+
 }
 .logo{
     text-align: center;
@@ -20,16 +22,12 @@ h1{
 }
 .logo img{
     border-radius: 50%;
-    width: 275px;
+    width: 80px;
 }
 .menu{
     list-style-type: none;
-    background-color: rgb(114, 72, 43);
+    background-color: rgb(145, 112, 70);
     text-align: center;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 50px;
 }
 .menu li{
     display: inline-block;
@@ -39,16 +37,33 @@ h1{
     display: inline-block;
     margin: 12px;
     padding: 13px;
-    color: black;
+    color: rgb(26, 25, 25);
     font-size: 22px;
 }
 .menu li a:hover{
-    background-color: rgb(194, 167, 132);
+    background-color: rgb(29, 28, 28);
     color: white;
     border-radius: 45%;
 }
 main{
     position: relative;
+}
+.card{
+    background-color: rgb(37, 36, 36);
+}
+.card-title{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(163, 129, 87);
+    
+    font-family: 'Stint Ultra Expanded', serif;
+}
+.card-text{
+    font-size: 24px;
+    line-height: 40px;
+    padding: 3rem;
+    color: white;
 }
 .section1{
     text-align: left;
@@ -56,240 +71,204 @@ main{
     margin-left: 80px;
     margin-bottom: 30px;
 }
-.section1 img{
-    width: 600px;
-    border-radius: 20px;
-}
-.parrafo1{
-    margin: 15px;
-    width: 50%;
-    position: absolute;
-    left: 42%;
-    bottom: 58%;
-}
-.parrafo1 p{
-    font-size: 22px;
-    line-height: 1.6;
-    color: black;
-    padding: 8px
-}
-.section2{
-    text-align: right;
-    margin-top: 45px;
-    margin-right: 80px;
-    margin-bottom: 30px;
-}
-.section2 img{
-    width: 600px;
-    border-radius: 20px;
-}
-.parrafo2{
-    margin: 15px;
-    width: 50%;
-    position: absolute;
-    right: 42%;
-    bottom: 2%;
-}
-.parrafo2 p{
-    font-size: 22px;
-    line-height: 1.6;
-    color: black;
-    padding: 8px;
-}
+
 footer{
-    background-color: rgb(194, 160, 117);
-    position: static;
+    background-color: rgb(145, 112, 70);
 }
-h2{
-    width: 500px;
-    font-size: 40px;
-    padding: 25px;
-    position: relative;
-    top: 125px;
-    left: 85px;
+.redes-container{
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.redes{  
-    text-align: center;
+.redes-container img{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 15px;
+    width: 70px;
+    border-radius: 25%;
 }
-.redes img{
-    width: 200px;
-    border-radius: 50%;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+
+
 
 /*Diseño para el menu*/
 
-h3{
-    font-size: 40PX;
-    margin-top: 15px;
-    margin-left: 15px;
-    padding-top: 25px;
-    padding-left: 32px;
-}
 .bebidas{
+
     text-align: center;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
-.bebidas img{
-    width: 400px;
+.cafes{ 
+     
+    width: 500px;
+    height: 40vh;
+    margin: 15px;
+    
+}
+.cafes img{
+    border-radius: 50%;
+    width: 200px;
     margin-left: 35px;
     margin-right: 35px;
     padding: 20px;
+}
+.comprar{
+    margin: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(145, 112, 70);
+}
+.tituloMenu{
+    color: white;
+}
+h3{
+    margin: 10px;
+    padding: 15px;
 }
 .comida{
     text-align: center;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.comida img{
-    width: 400px;
-    margin-left: 35px;
-    margin-right: 35px;
-    padding: 20px;
+.almuerzo{
+
+    width: 500px;
+    height: 40vh;
+    margin: 15px;
+    
 }
-.combos{
-    text-align: center;
-    margin: 20px;
-}
-.combos img{
-    width: 400px;
+.almuerzo img{
+    border-radius: 50%;
+    width: 200px;
     margin-left: 35px;
     margin-right: 35px;
     padding: 20px;
 }
 
 /*Diseño para locales*/
-.palermo{
-    position: relative;
-    right: 16%;
-    text-align: right;  
+
+.titulo-palermo{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center; 
 }
-.map1{
-    text-align: right;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
+.titulo-palermo iframe{
+    border-radius: 12px;   
 }
-.map1 img{
-    width: 600px;
-    height: 560px;
-    border-radius: 20px;
-    border: solid 3px black;
+
+.titulo-caballito{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.caballito{
-    width: 80%;
-    position: relative;
-    text-align: left;
-    left: 12%;
-}
-.map2{
-    width: 90%;
-    text-align: left;
-    margin-bottom: 25px;
-    position: relative;
-    left: 68px;
-}
-.map2 img{
-    width: 600px;
-    height: 560px;
-    border-radius: 20px;
-    border: solid 3px black;
+.titulo-caballito iframe{
+    border-radius: 12px;
 }
 
 /*Diseño para Nosotros*/
 
-.icon{
-    width: 80%;
-    margin-left: 20px;
-    margin-top: 38px;
-    position: relative;
-    top: 20px;
-    left: 10%;
+.nuestroCafe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
 }
-.icon img{
-    border-radius: 25px;
-    width: 500px;
-    height: 450px;
+.nuestroCafe img{
+    width: 650px;
+    
 }
-.historia{
-    position: absolute;
-    left: 58%;
-    bottom: 95%;
+.nuestroCafe p{
+    opacity: 0.7;
+    background-color: rgb(48, 43, 43);
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 40px;
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
 }
-.parrafoHistoria{
-    margin: 12px;
-    width: 670px;
-    position: absolute;
-    top: 6%;
-    left: 50%;
+.container-parrafos{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.parrafoHistoria p{
-    font-size: 20px;
-    line-height: 1.5;
+.container-hijo{
+    width: 840px;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-.producto{
-    margin: 15px;
-    padding-top: 15px;
-    text-align: left;
+.container-parrafos p{
+    font-size: 22px;
+
 }
-.producto h3{
-    width: 70%;
-    position: relative;
-    left: 13%;
-}
-.parrafoProducto{
-    margin-top: 12px;
-    margin-bottom: 70px;
-    padding: 15px;
-    border: solid 3px rgb(73, 21, 21);
-    width: 600px;
-    position: relative;
-    top: 16px;
-    left: 10%;
-}
-.parrafoProducto p{
-    font-size: 21px;
-    line-height: 1.5;
-}
-.botones{
-    position: absolute;
-    left: 66%;
-    bottom: 32%;
-}
-.imagenP{
-    position: absolute;
-    top: 71%;
-    left: 61%;
-}
-.imagenP img{
-    width: 330px;
-    height: 240px;
-}
+    
 
 /*Diseño para Contacto*/
+.containerForm{
+    display: flex;
+    min-height: 100vh;
+}
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -3px black;
+    text-align: center;
+}
+.form__title{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.form__paragraph{
+    font-weight: 300;
 
-.formulario{
-    width: 500px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    margin-left: 35px;
-    border: groove rgb(46, 45, 45) 8px;
-    padding: 25px;
 }
-.formulario div{
-    text-align: left;
-    margin: 10px;
-    padding: 5px;
+
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form__group{
     position: relative;
+
 }
-.formulario div label{
-    font-size: 25px;
+.form__input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid ;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.formulario div input{
-    height: 20px;
-    position: relative;
-    left: 20px;
+.form__label{
+    color: rgb(19, 19, 19);
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-12px);
+
 }
