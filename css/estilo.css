@@ -19,15 +19,21 @@ h1{
 .logo{
     text-align: center;
     margin: 10px;
+
 }
 .logo img{
     border-radius: 50%;
     width: 80px;
+    transition: width 0.8s;
+}
+.logo img:hover{
+    box-shadow: 0 0 10px;
+    width: 88px;
 }
 .menu{
     list-style-type: none;
     background-color: rgb(145, 112, 70);
-    text-align: center;
+    text-align: center; 
 }
 .menu li{
     display: inline-block;
@@ -39,11 +45,13 @@ h1{
     padding: 13px;
     color: rgb(26, 25, 25);
     font-size: 22px;
+    transition: 0.3s;
 }
 .menu li a:hover{
-    background-color: rgb(29, 28, 28);
-    color: white;
-    border-radius: 45%;
+    background-color: rgb(22, 21, 21);
+    color: rgb(187, 128, 50);
+    border-radius: 50%;
+    box-shadow: 0 0 8px black;
 }
 main{
     position: relative;
@@ -65,24 +73,32 @@ main{
     padding: 3rem;
     color: white;
 }
+/*footer y diseño de redes*/
+
 footer{
     background-color: rgb(145, 112, 70);
+    height: 200px;
+    display: grid;
+    place-content: center;
 }
 .redes-container{
-    height: 25vh;
+    width: 45vw;
+    height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .redes-container img{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding: 15px;
-    width: 70px;
-    border-radius: 25%;
+    color: black;
+    width: 50px;
+    transition: width 0.8s;
 }
-
+.redes-container img:hover{
+    border-radius: 34px;
+    width: 65px;
+    box-shadow: 0 0 15px;
+}
 
 
 /*Diseño para el menu*/
