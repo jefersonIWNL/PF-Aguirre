@@ -1,0 +1,86 @@
+/*Barra de Busqueda de todo el sitio wed*/
+
+.menu{
+    list-style-type: none;
+    text-align: center;
+    background-color: $color-nav-bar;
+    position: sticky;
+    li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            display: inline-block;
+            margin: 12px;
+            padding: 13px;
+            color: rgb(26, 25, 25);
+            font-size: 22px;
+            transition: all 0.3s;
+            &:hover{
+                background-color: rgb(22, 21, 21);
+                border-radius: 50%;
+                box-shadow: 0 0 8px black;
+                color: rgb(187, 128, 50);
+            }
+        }
+    }
+}
+.logo{
+    text-align: center;
+    margin: 10px;
+    img{
+        border-radius: 50%;
+        width: 80px;
+        transition: width 0.8s ease;
+        &:hover{
+            box-shadow: 0 0 10px;
+            width: 88px;
+        }
+    }
+}
+
+/*main del index*/
+
+.card{
+    background-color: $color-card;
+}
+.card-title{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-family: $font-titles;
+    color: rgb(163, 129, 87);
+}
+.card-text{
+    font-size: 24px;
+    line-height: 40px;
+    padding: 3rem;
+    color: white;
+}
+
+/*footer y diseño de redes*/
+
+footer{
+    background: $color-footer;
+    margin-top: 20px;
+    height: 200px;
+    display: grid;
+    place-content: center;
+}
+.redes-container{
+    width: 45vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        color: black;
+        width: 50px;
+        transition: width 0.8s ease;
+        &:hover{
+            border-radius: 34px;
+            box-shadow: 0 0 15px;
+            width: 65px;
+        }
+    }
+}

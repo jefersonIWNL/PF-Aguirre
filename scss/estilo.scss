@@ -1,0 +1,37 @@
+
+@import "font.scss";
+@import "colores.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $color-body;
+    font-family: 'Handlee', cursive;
+}
+
+/*Diseño del index*/
+
+@import "index.scss";
+
+/*Diseño de la pagina menu*/
+
+@import "menu.scss";
+
+/*Diseño para la pagina de locales*/
+
+@import "locales.scss";
+
+/*Diseño para la pagina Nosotros*/
+
+@import "nosotros.scss";
+
+/*Diseño para la pagina de contacto*/
+
+@import "contacto.scss";
+
+/*Desing responsive*/
+
+@import "responsive.scss";

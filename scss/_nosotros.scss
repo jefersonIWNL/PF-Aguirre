@@ -1,0 +1,85 @@
+.nuestroCafe{
+    img{
+        width: 100%;
+    }
+}
+
+/*parrafos-nosotros*/
+
+.container-parrafos{
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 20vw 1fr 1fr 20vw;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    ". A B ."
+    ". C D .";
+    p{
+        font-size: 20px;
+    }
+    .parrafo-1{
+        grid-area: A;
+    }
+    .parrafo-2{
+        grid-area: B;
+    }
+    .parrafo-3{
+        grid-area: C;
+    }
+    .parrafo-4{
+        grid-area: D;
+    }
+}
+
+/*Cards-nosotros*/
+
+.nosotros__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    .cards__nosotros{
+        @extend .cards;
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+        &:hover{
+            box-shadow: 5px 5px 20px #7a5b3b;
+            transform: translateY(-5px);
+        }
+        .información{
+            text-align: center;
+            padding: 15px;
+            h3{
+                margin-bottom: 12px;
+            }
+            p{
+                margin-top: 5px;
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+            a{
+                text-decoration: none;
+                padding: 12px;
+                border: solid 1px rgb(106, 146, 160);
+                border-radius: 5px;
+                color: rgb(115, 151, 163);
+                font-size: 18px;
+                &:hover{
+                    background: rgb(117, 168, 185);
+                    color: white
+                }
+            }
+        }
+    }
+    .card-1{
+        justify-self: end;
+    }
+    .card-3{
+        justify-self: start;
+    }
+}

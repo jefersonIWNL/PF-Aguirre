@@ -1,0 +1,45 @@
+.containerForm{
+    display: flex;
+    min-height: 100vh;
+}
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -3px black;
+    text-align: center;
+}
+.form__title{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.form__paragraph{
+    font-weight: 300;
+}
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form__group{
+    position: relative;
+}
+.form__input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form__label{
+    color: rgb(19, 19, 19);
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-12px);
+}
