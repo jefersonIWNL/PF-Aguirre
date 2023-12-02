@@ -9,6 +9,7 @@ h1{
 /*nav-bar del menu*/
 
 .menu__comida{
+    font-family: 'Open Sans', sans-serif;
     margin: 25px;
     display: flex;
     justify-content: center;
@@ -20,20 +21,32 @@ h1{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         a{
-            background: #cfc0b1;
-            border: solid 1px black;
-            border-radius: 15%;
-            box-shadow: 1px 2px 8px;
-            padding: 13px;
-            color: black;
-            font-size: 21px;
+            position: relative;
+            color: #fff;
+            font-size: 24px;
             text-decoration: none;
             transition: all 0.5s ease;
-            &:hover{
-                color: rgb(189, 252, 252);
-                background: rgb(46, 46, 46);
+            &::before{
+                content: "";
+                position: absolute;
+                background: #c0baba;
+                height: 2px;
+                left: 0;
+                bottom: 6px;
+                transform: scale(1);
+                transition:  transform .4s ease;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background: #c0baba;
+                height: 2px;
+                left: 0;
+                bottom: 10px;
+                transform: scale(1);
+                transition:  transform .4s ease;
             }
         }
     }
@@ -42,12 +55,89 @@ h1{
 /*Cartas del menu*/
 
 .card__container{
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     align-items: stretch;
 }
+.second__cart{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        h3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            text-align: center;
+            background: rgb(0,0,0,0.4);
+            color: #fff;
+            line-height: 45px;
+        }
+    }
+    .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(136, 137, 138);
+        padding: 15px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow:  0 5px 10px #000; 
+        h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+        p{
+            letter-spacing: .5px;
+        }
+        a{
+            padding: 10px;
+            color: #926d48;
+            font-size: 20px;
+            border: solid 1px #926d48;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            &:hover{
+                background: #926d48;
+                border: solid #926d48;
+                color: #000;
+            }  
+        }
+    }
+    &:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    &:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+
+
 .cards{
     width: 18vw;
     height: 515px;
