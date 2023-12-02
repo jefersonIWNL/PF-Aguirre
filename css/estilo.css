@@ -272,43 +272,6 @@ h1 {
 }
 
 
-
-.cards figure img, .nosotros__container .cards__nosotros figure img {
-  width: 100%; 
-}
-.cards .contenido, .nosotros__container .cards__nosotros .contenido {
-  text-align: center;
-  padding: 10px; 
-}
-.cards .contenido h3, .nosotros__container .cards__nosotros .contenido h3 {
-  font-weight: 350;
-  margin-bottom: 15px; 
-}
-.cards .contenido p, .nosotros__container .cards__nosotros .contenido p {
-  line-height: 1.3;
-  color: black;
-  margin-bottom: 25px; 
-}
-.cards .contenido a, .nosotros__container .cards__nosotros .contenido a {
-  padding: 10px;
-  color: #926d48;
-  font-size: 20px;
-  border: solid 1px #926d48;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.4s ease; 
-}
-.cards .contenido a:hover, .nosotros__container .cards__nosotros .contenia:hover {
-  background-color: #c7a17a;
-  color: white;
-}      
-.cards:hover, .nosotros__container .cards__nosotros:hover {
-  box-shadow: 5px 5px 20px #7a5b3b;
-  transform: translateY(-5px); 
-}
-
-
-
 /*Diseño para la pagina de locales*/
 .titulo-palermo {
   margin-top: 10px;
