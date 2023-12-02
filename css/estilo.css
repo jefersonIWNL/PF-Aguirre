@@ -134,7 +134,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 40px; 
+  gap: 22px; 
 }
 .menu__comida ul a {
   position: relative;
@@ -193,7 +193,7 @@ h1 {
 }
 .second__cart{
   position: relative;
-  width: 400px;
+  width: 380px;
   height: 540px;
   margin-bottom: 25px;
 }
