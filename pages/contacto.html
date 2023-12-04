@@ -52,38 +52,36 @@
         </h1>
     </header>
     <hr>
-    <main class="containerForm">
-      <form class="form">
-        <h2 class="form__title">Contactanos</h2>
-        <p class="form__paragraph">Si tienes alguna duda o consulta no dudes en contactarnos</p>
+    <main class="containerPadre">
+      <div class="containerForm">
+        <div class="form__fondo">
+          <h2>Contactanos</h2>
+          <form action="#">
+            <div class="contenedor__input">
+              <input type="name" required>
+              <label for="#">Nombre</label>
+              <span class="form__icon"><i class="fa-solid fa-user"></i></span>
+            </div>
+            <div class="contenedor__input">
+              <input type="email" required>
+              <label for="#">Email</label>
+              <span class="form__icon"><i class="fa-solid fa-envelope"></i></span>
+            </div>
+            <div class="contenedor__input">
+              <input type="text" required>
+              <label for="#">Telefono</label>
+              <span class="form__icon"><i class="fa-solid fa-phone"></i></span>
+            </div>
+            <div class="contenedor__input">
+              <input type="text" required>
+              <label for="#">Comentarios</label>
+              <span class="form__icon"><i class="fa-solid fa-comment"></i></span>
+            </div>
 
-        <div class="form__container">
-          <div class="form__group">
-            <input type="text" id="name" class="form__input">
-            <label for="name" class="form__label">Nombre:</label>
-            <span class="form__line"></span>
-          </div>
-          <div class="form__group">
-            <input type="text" id="number" class="form__input">
-            <label for="number" class="form__label">Telefono:</label>
-            <span class="form__line"></span>
-          </div>
-          <div class="form__group">
-            <input type="text" id="mail" class="form__input">
-            <label for="mail" class="form__label">Email:</label>
-            <span class="form__line"></span>
-          </div>
-          <div class="form__group">
-            <input type="text" id="comment" class="form__input">
-            <label for="comment" class="form__label">Comentarios:</label>
-            <span class="form__line"></span>
-          </div>
-          
-
-          <input type="submit" class="form__submit" value="Enviar">
-
+            <button type="submit" class="btn__enviar">Enviar</button>
+          </form>
         </div>
-      </form>
+      </div>
 
     </main>
     

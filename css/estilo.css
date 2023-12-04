@@ -383,52 +383,85 @@ h1 {
 
 
 /*Diseño para la pagina de contacto*/
-.containerForm {
+.containerPadre{
+  width: 100%;
   display: flex;
-  min-height: 100vh;
+  justify-content: center;
+}
+.containerForm {
+  margin: 30px 0;
+  padding: 20px 55px;
+  position: relative;
+  background:#E6E8EC;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+  width: 550px;
+  height: 630px;
+  border: solid 2px #000;
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
 }
-.form {
-  background-color: white;
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -3px black;
+.form__fondo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form__fondo h2{
+  font-size: 2.5rem;
   text-align: center;
+  margin: 35px 0 20px 0;
 }
-.form__title {
-  font-size: 2.1rem;
-  margin-bottom: 0.5em;
-}
-.form__paragraph {
-  font-weight: 500;
-  font-size: 18px;
-}
-.form__container {
-  margin-top: 3em;
-  display: grid;
-  gap: 2.5em;
-}
-.form__group {
+.form__fondo .contenedor__input{
   position: relative;
-}
-.form__input {
   width: 100%;
-  font-size: 1rem;
-  padding: 0.6em 0.3em;
+  height: 50px;
+  border-bottom: 2px solid #000;
+  margin: 32px 0;
+}
+.form__fondo .contenedor__input input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
 }
-.form__label {
-  color: rgb(19, 19, 19);
+.form__fondo .contenedor__input label{
   position: absolute;
-  top: 0;
-  left: 5px;
-  transform: translateY(-12px);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3em;
+  font-weight: 500;
+  transition: all .4s ease;
+  pointer-events: none;
+}
+.form__fondo .contenedor__input .form__icon{
+  font-size: 1.4em;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.form__fondo .contenedor__input input:focus~label,
+.form__fondo .contenedor__input input:valid~label{
+  top: -5px;
+}  
+.btn__enviar{
+  margin-top: 25px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3em;
+}
+.btn__enviar:hover{
+  box-shadow: 0 1px 10px #000;
 }
 
 
