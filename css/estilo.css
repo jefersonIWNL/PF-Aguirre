@@ -274,18 +274,28 @@ h1 {
 
 /*Diseño para la pagina de locales*/
 .titulo-palermo {
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 15px;
-  text-align: center; 
+  display: flex;
+  justify-content: center;
+}
+.map-palermo{
+  width: 1000px;
 }
 .titulo-palermo iframe {
   border-radius: 12px; 
-  box-shadow: 0 1px 10px #000;
+  box-shadow: 0 1px 10px;
 }
 .titulo-caballito {
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
-  text-align: center; 
+  display: flex;
+  justify-content: center;
+}
+.map-caballito{
+  width: 1000px;
 }
 .titulo-caballito iframe {
   border-radius: 12px;
